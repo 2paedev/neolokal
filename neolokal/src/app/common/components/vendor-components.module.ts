@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -19,6 +20,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     IonicModule,
     NgxSpinnerModule,
   ],
-  providers: []
+  providers: [Geolocation]
 })
 export class VendorComponentsModule {}
